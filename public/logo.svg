@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="442" height="92" viewBox="0 0 442 92" fill="none">
+  <rect x="6" y="6" width="80" height="80" rx="17" fill="#173B32"/>
+  <path d="M23 43.2 46 24l23 19.2" stroke="#F7F4EE" stroke-width="3.1" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M29.6 41.8V66h32.8V41.8" stroke="#F7F4EE" stroke-width="3.1" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M46 58.8c-5.2-3.65-8.3-6.45-8.3-9.8a4.82 4.82 0 0 1 8.3-3.24 4.82 4.82 0 0 1 8.3 3.24c0 3.35-3.1 6.15-8.3 9.8Z" fill="#B57B59"/>
+  <text x="106" y="50" fill="#26332D" font-family="Georgia,serif" font-size="42" letter-spacing="-2">Domestic<tspan fill="#173B32">Help</tspan><tspan font-family="Arial,sans-serif" font-size="15" letter-spacing="0">.ca</tspan></text>
+  <text x="108" y="72" fill="#73766E" font-family="Arial,sans-serif" font-size="11" letter-spacing="2.4">PRIVATE HOUSEHOLD STAFF</text>
+</svg>

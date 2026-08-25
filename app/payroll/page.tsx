@@ -1,0 +1,8 @@
+import type { Metadata } from "next";
+import { Check, ClosingCTA, InteriorHero, SiteFooter, SiteHeader } from "../components/site-chrome";
+
+export const metadata: Metadata = { title: "Household Employee Payroll Support | $70 Monthly | DomesticHelp.ca", description: "Add household employee payroll support for $70 per employee per month. Available for private households across Canada, except Quebec.", alternates: { canonical: "/payroll" } };
+
+export default function PayrollPage() {
+  return <main><SiteHeader /><InteriorHero eyebrow="Optional household payroll support" title="Your employee is hired." emphasis="Let payroll feel simpler." description="Add practical ongoing payroll support for your household employee at a straightforward monthly rate, available in Canadian provinces outside Quebec." breadcrumbs={[{ label: "Payroll" }]} /><section className="section-space"><div className="shell detail-split detail-split--balanced"><div><p className="eyebrow">Simple monthly pricing</p><h2>$70 per employee.<br /><em>Each month.</em></h2><p>Household payroll is available as an optional ongoing service for families employing a housekeeper, household assistant, senior companion, private cook, or other private household employee.</p><p>This service is not available in Quebec. Families in Montreal and Westmount can still use our household recruitment services.</p></div><ul className="quality-list"><li><Check /> Straightforward monthly household payroll support</li><li><Check /> Available for each household employee</li><li><Check /> Optional; recruitment can be used separately</li><li><Check /> Available in Canadian provinces outside Quebec</li></ul></div></section><ClosingCTA heading="Ask us about household payroll." /><SiteFooter /></main>;
+}

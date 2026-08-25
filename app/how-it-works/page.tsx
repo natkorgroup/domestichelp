@@ -1,0 +1,9 @@
+import type { Metadata } from "next";
+import { Check, ClosingCTA, InteriorHero, SiteFooter, SiteHeader } from "../components/site-chrome";
+import { RecruitmentProcess } from "../components/recruitment-sections";
+
+export const metadata: Metadata = { title: "How Private Household Recruitment Works | DomesticHelp.ca", description: "See how DomesticHelp.ca personally sources, shortlists, and introduces experienced household staff for Canadian families in four straightforward steps.", alternates: { canonical: "/how-it-works" } };
+
+export default function HowItWorksPage() {
+  return <main><SiteHeader /><InteriorHero eyebrow="Our recruitment process" title="Finding household help" emphasis="should feel personal." description="We take the time to understand your home, identify relevant people, and introduce the candidates most likely to fit your daily life." breadcrumbs={[{ label: "How it works" }]} /><section className="section-space"><div className="shell"><div className="section-heading"><p className="eyebrow">A considered four-step process</p><h2>From first conversation<br /><em>to a confident hire.</em></h2></div><RecruitmentProcess /></div></section><section className="detail-features section-space"><div className="shell detail-split detail-split--balanced"><div><p className="eyebrow">Why families choose us</p><h2>Fewer strangers.<br /><em>A more thoughtful search.</em></h2><p>You do not have to sort through an open marketplace or spend weeks contacting people who do not match your household. We begin with the role, your expectations, and the qualities that matter to you.</p></div><ul className="quality-list"><li><Check /> A genuinely personal discussion of your needs</li><li><Check /> Relevant candidates, not an overwhelming directory</li><li><Check /> Discretion around your family and household</li><li><Check /> Clear recruitment options and transparent pricing</li></ul></div></section><ClosingCTA /><SiteFooter /></main>;
+}
