@@ -36,7 +36,7 @@ export function Check() {
 export function SiteHeader() {
   return (
     <>
-      <div className="announcement">Personalized household staff recruitment <span>·</span> Serving families across Canada</div>
+      <div className="announcement">\n        <span className="announcement__line">Personalized household staff recruitment</span>\n        <span className="announcement__separator">·</span>\n        <span className="announcement__line">Serving families across Canada</span>\n      </div>
       <header className="site-header">
         <div className="site-header__inner shell">
           <Brand />
