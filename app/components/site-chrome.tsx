@@ -36,7 +36,7 @@ export function Check() {
 export function SiteHeader() {
   return (
     <>
-      <div className="announcement">Thoughtful household recruitment across Canada <span>·</span> Serving families from coast to coast</div>
+      <div className="announcement">Personalized household staff recruitment <span>·</span> Serving families across Canada</div>
       <header className="site-header">
         <div className="site-header__inner shell">
           <Brand />
