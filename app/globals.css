@@ -56,7 +56,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .status-dot { width: 7px; height: 7px; flex: 0 0 auto; border-radius: 50%; background: #8a9d76; }
 .status-dot--light { background: #bfd098; }
 
-.hero { background: linear-gradient(90deg, var(--paper) 0 54%, var(--cream) 54% 100%); }
+.hero { overflow: clip; background: linear-gradient(90deg, var(--paper) 0 54%, var(--cream) 54% 100%); }
 .hero__inner { min-height: 585px; display: grid; grid-template-columns: .93fr 1.07fr; align-items: center; }
 .hero__copy { padding: 52px 60px 48px 0; }
 .hero h1, .section-heading h2, .parents h2, .contact h2 { margin: 0; font-family: var(--serif); font-weight: 400; letter-spacing: -.062em; }
