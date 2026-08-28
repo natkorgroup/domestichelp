@@ -147,6 +147,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .form-success > span { width: 38px; height: 38px; display: grid; place-items: center; border-radius: 50%; background: #edf2eb; color: var(--forest); }
 .form-success h3 { margin: 0; font-family: var(--serif); font-size: 28px; font-weight: 400; }
 .form-success p { margin: 0; color: var(--muted); font-size: var(--text-md); line-height: 1.8; }
+.form-success p a { color: var(--forest); text-decoration: underline; text-underline-offset: 3px; }
 .form-success button { width: fit-content; margin-top: 12px; background: white; cursor: pointer; }
 
 .parents { background: var(--cream); }

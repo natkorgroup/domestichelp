@@ -33,10 +33,11 @@ export default async function CityServicePage({ params }: Props) {
 
       <section className="detail-features section-space"><div className="shell"><div className="section-heading"><p className="eyebrow">What support can include</p><h2>{service.title} in {city.name}<br /><em>matched to real household needs.</em></h2></div><div className="feature-list">{service.responsibilities.map((item) => (<div key={item}><Check />{item}</div>))}</div></div></section>
 
-      <section className="section-space"><div className="shell detail-split detail-split--balanced"><div><p className="eyebrow">Recruitment options</p><h2>A clearer way to hire<br /><em>in {city.name}.</em></h2><p>Choose a curated candidate search for <strong>$995</strong> and meet up to three relevant candidates, or full recruitment for <strong>10% of annual salary</strong>, including references, agreement support, and a 90-day replacement guarantee.</p>{city.region !== "Quebec" ? <p>Optional household payroll support is available for <strong>$70 per employee per month</strong>.</p> : <p>We recruit household staff in Quebec; optional payroll support is not available in this province.</p>}<a className="text-link" href="/pricing">Compare recruitment options <Arrow /></a></div><ul className="quality-list">{service.qualities.map((quality) => (<li key={quality}><Check />{quality}</li>))}</ul></div></section>
+      <section className="section-space"><div className="shell detail-split detail-split--balanced"><div><p className="eyebrow">Recruitment options</p><h2>A clearer way to hire<br /><em>in {city.name}.</em></h2><p>Choose our available curated candidate search for <strong>$995</strong> and meet up to three relevant candidates. Full recruitment is <strong>coming soon</strong>, with a planned fee of 10% of annual salary.</p>{city.region !== "Quebec" ? <p>Optional household payroll support is available for <strong>$70 per employee per month</strong>.</p> : <p>We recruit household staff in Quebec; optional payroll support is not available in this province.</p>}<a className="text-link" href="/pricing">Compare recruitment options <Arrow /></a></div><ul className="quality-list">{service.qualities.map((quality) => (<li key={quality}><Check />{quality}</li>))}</ul></div></section>
 
       <ClosingCTA heading={"Find a " + service.singular + " in " + city.name + "."} service={service.slug} city={city.slug} />
       <SiteFooter />
     </main>
   );
 }
+

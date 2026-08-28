@@ -29,9 +29,10 @@ export default async function CityPage({ params }: Props) {
 
       <section className="detail-features section-space"><div className="shell detail-split detail-split--balanced"><div><p className="eyebrow">Local understanding</p><h2>Private recruitment<br /><em>throughout {city.name}.</em></h2><p>{city.description} We understand that availability, travel time, and the right personal fit all influence whether a placement will work over the long term.</p>{city.region === "Quebec" && <p>We can discuss English-speaking, French-speaking, or bilingual household preferences. Payroll support is not offered in Quebec.</p>}</div><div className="neighbourhoods"><h3>Communities we can discuss</h3><ul>{city.neighbourhoods.map((name) => (<li key={name}><Check />{name}</li>))}</ul></div></div></section>
 
-      <section className="section-space"><div className="shell local-pricing"><p className="eyebrow">Transparent recruitment fees</p><h2>A focused search, or full support.</h2><p>Meet up to three thoughtfully matched candidates for <strong>$995</strong>, or choose full household recruitment for <strong>10% of the employee’s annual salary</strong>.</p><a className="text-link" href="/pricing">See the full fee structure <Arrow /></a></div></section>
+      <section className="section-space"><div className="shell local-pricing"><p className="eyebrow">Transparent recruitment fees</p><h2>A focused search, with more support coming soon.</h2><p>Meet up to three thoughtfully matched candidates with our available curated search for <strong>$995</strong>. Full household recruitment is <strong>coming soon</strong>, with a planned fee of 10% of annual salary.</p><a className="text-link" href="/pricing">See the full fee structure <Arrow /></a></div></section>
       <ClosingCTA heading={"Find the right person for your " + city.name + " home."} city={city.slug} />
       <SiteFooter />
     </main>
   );
 }
+

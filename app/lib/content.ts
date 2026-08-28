@@ -100,6 +100,16 @@ export const services: Service[] = [
     responsibilities: ["Agreed daily housekeeping and practical support", "Meal preparation and household errands", "Companionship and everyday routines", "Flexible coordination around household schedules", "Careful respect for personal boundaries", "Clear work hours, accommodation, and time off"],
     qualities: ["Previous live-in or private-home experience", "A respectful, independent temperament", "Strong communication around boundaries", "Long-term reliability and discretion"],
   },
+  {
+    slug: "domestic-couples",
+    title: "Domestic Couples",
+    singular: "domestic couple",
+    summary: "Two experienced partners who live on or near the property and care for the household together.",
+    introduction: "A domestic couple brings complementary skills to one private residence, providing consistent day-to-day care for the home, meals, property, guests, and household routines.",
+    suitedFor: "Larger homes, estates, seasonal residences, and families who prefer one established couple to take shared responsibility for the property and its daily operation.",
+    responsibilities: ["Housekeeping, laundry, and household presentation", "Cooking, grocery shopping, and kitchen organization", "Property checks and light practical maintenance", "Driving, errands, and household purchasing", "Vendor access and service coordination", "Guest preparation and day-to-day household oversight"],
+    qualities: ["Proven experience working together in private homes", "Complementary household and property skills", "Clear division of duties and strong communication", "Discretion, reliability, and comfort with a live-in arrangement"],
+  },
 ];
 
 export const cities: City[] = [
@@ -116,6 +126,7 @@ export const cities: City[] = [
   { slug: "victoria", name: "Victoria", province: "British Columbia", abbreviation: "BC", region: "British Columbia", neighbourhoods: ["Oak Bay", "Rockland", "James Bay", "Gordon Head"], description: "Thoughtful household support and senior companionship for Victoria-area families." },
   { slug: "kelowna", name: "Kelowna", province: "British Columbia", abbreviation: "BC", region: "British Columbia", neighbourhoods: ["Upper Mission", "Lower Mission", "Kettle Valley", "Glenmore"], description: "Experienced private household help for Kelowna residences, families, and ageing parents." },
   { slug: "calgary", name: "Calgary", province: "Alberta", abbreviation: "AB", region: "Alberta", neighbourhoods: ["Mount Royal", "Elbow Park", "Britannia", "Aspen Woods"], description: "Discreet, personal recruitment for Calgary families and established private households." },
+  { slug: "edmonton", name: "Edmonton", province: "Alberta", abbreviation: "AB", region: "Alberta", neighbourhoods: ["Glenora", "Windsor Park", "Laurier Heights", "Crestwood"], description: "Thoughtful private household recruitment for Edmonton families seeking experienced, dependable support at home." },
   { slug: "montreal", name: "Montreal", province: "Quebec", abbreviation: "QC", region: "Quebec", neighbourhoods: ["Outremont", "Town of Mount Royal", "Golden Square Mile", "Île-des-Sœurs"], description: "Personal household recruitment for Montreal families, with attention to English- and French-speaking preferences." },
   { slug: "westmount", name: "Westmount", province: "Quebec", abbreviation: "QC", region: "Quebec", neighbourhoods: ["Upper Westmount", "Westmount Park", "Victoria Village", "Summit Woods"], description: "Discreet private-household recruitment for Westmount homes where experience and trust come first." },
 ];
@@ -126,7 +137,7 @@ export const steps = [
   { title: "Tell us about home", text: "We learn what your household needs, your preferences, and the kind of person who will fit." },
   { title: "We do the searching", text: "We personally source, speak with, and thoughtfully shortlist relevant candidates." },
   { title: "Meet your shortlist", text: "You meet a small number of people selected for your home, not a directory of strangers." },
-  { title: "Hire with confidence", text: "Choose your person. Full recruitment includes reference checks and a replacement guarantee." },
+  { title: "Hire with confidence", text: "Choose your person. Our curated search is available now, with full recruitment coming soon." },
 ];
 
 export function getService(slug: string) {
@@ -138,3 +149,4 @@ export function getCity(slug: string) {
 }
 
 export const enquiryEmail = "hello@domestichelp.ca";
+

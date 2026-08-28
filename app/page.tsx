@@ -54,7 +54,7 @@ export default function Home() {
       <section className="parents section-space">
         <div className="shell parents__inner">
           <div className="parents__portrait">
-            <img src="/hero-household-help.png" alt="An older woman enjoying the support of a trusted household companion in her own home" />
+          <img src="/ageing-parents-plants.png" alt="An older woman and a trusted household companion caring for plants together at home" />
             <p>Support that feels like a natural part of home.</p>
           </div>
           <div className="parents__copy">
@@ -88,10 +88,10 @@ export default function Home() {
               <a className="button button--outline" href="/contact?plan=curated-search">Start a curated search <Arrow /></a>
             </article>
             <article className="price-card price-card--featured">
-              <span className="price-card__badge">Most complete</span><p className="price-card__eyebrow">Full household recruitment</p><div className="price-card__amount">10<span>%</span></div><p className="price-card__sub">Of your new employee’s annual salary.</p>
+              <span className="price-card__badge">Coming soon</span><p className="price-card__eyebrow">Full household recruitment</p><div className="price-card__amount">10<span>%</span></div><p className="price-card__sub">Planned fee: 10% of your new employee’s annual salary.</p>
               <ul><li><Check /> A tailored search and personal shortlisting</li><li><Check /> Interviews, references, and candidate checks</li><li><Check /> Help preparing the employment agreement</li><li><Check /> A 90-day replacement guarantee</li></ul>
-              <p className="price-card__credit">A $500 search commencement is credited toward your final fee.</p>
-              <a className="button button--light" href="/contact?plan=full-recruitment">Begin full recruitment <Arrow /></a>
+              <p className="price-card__credit">This service is not currently available. Join the interest list to hear when it launches.</p>
+              <a className="button button--light" href="/contact?plan=full-recruitment">Join the interest list <Arrow /></a>
             </article>
           </div>
           <div className="payroll"><div><p className="eyebrow">Optional, ongoing support</p><h3>Payroll, taken care of.</h3><p>Household payroll support is available across Canada, except Quebec.</p></div><div className="payroll__price">$70<span> / month per employee</span></div><a className="text-link" href="/payroll">Add payroll <Arrow /></a></div>
@@ -109,3 +109,4 @@ export default function Home() {
     </main>
   );
 }
+

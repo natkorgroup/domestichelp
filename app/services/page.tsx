@@ -4,7 +4,7 @@ import { services } from "../lib/content";
 
 export const metadata: Metadata = {
   title: "Private Household Staffing Services in Canada | DomesticHelp.ca",
-  description: "Find personally recruited housekeepers, household assistants, senior companions, family assistants, private cooks, and household managers across Canada.",
+  description: "Find personally recruited housekeepers, live-in household staff, domestic couples, senior companions, private cooks, and household managers across Canada.",
   alternates: { canonical: "/services" },
 };
 
@@ -19,3 +19,4 @@ export default function ServicesPage() {
     </main>
   );
 }
+

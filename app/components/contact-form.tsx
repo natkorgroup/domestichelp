@@ -38,7 +38,7 @@ export function ContactForm() {
   }
 
   if (state === "success") {
-    return <div className="form-success" role="status"><span>✓</span><h3>Thank you for getting in touch.</h3><p>Your enquiry has been sent. We’ll review what you shared and contact you to discuss the right support for your household.</p><button className="button button--outline" onClick={() => setState("idle")} type="button">Send another enquiry</button></div>;
+    return <div className="form-success" role="status"><span>✓</span><h3>Thank you — we’ve received your enquiry.</h3><p>Our team will review the information you shared and contact you within 1–2 business days to discuss the right support for your household and explain the next steps.</p><p>There is no need to submit another enquiry. If you need to add anything, email us at <a href="mailto:hello@domestichelp.ca">hello@domestichelp.ca</a>.</p><button className="button button--outline" onClick={() => setState("idle")} type="button">Send another enquiry</button></div>;
   }
 
   return (
@@ -49,7 +49,7 @@ export function ContactForm() {
         <label>Phone number <input autoComplete="tel" type="tel" value={values.phone} onChange={(event) => setValues({ ...values, phone: event.target.value })} placeholder="Optional" maxLength={40} /></label>
         <label>Where is your household? <select required value={values.city} onChange={(event) => setValues({ ...values, city: event.target.value })}><option value="">Choose your city</option>{cities.map((city) => (<option key={city.slug} value={city.slug}>{city.name}, {city.abbreviation}</option>))}<option value="other">Another Canadian community</option></select></label>
         <label>Who are you hoping to find? <select required value={values.service} onChange={(event) => setValues({ ...values, service: event.target.value })}><option value="">Choose the kind of help</option>{services.map((service) => (<option key={service.slug} value={service.slug}>{service.title}</option>))}<option value="not-sure">I’m not sure yet</option></select></label>
-        <label>Which search interests you? <select value={values.plan} onChange={(event) => setValues({ ...values, plan: event.target.value })}><option value="">Help me decide</option><option value="curated-search">Curated candidate search — $995</option><option value="full-recruitment">Full recruitment — 10% of annual salary</option><option value="payroll">Household payroll — $70 per month</option></select></label>
+        <label>Which search interests you? <select value={values.plan} onChange={(event) => setValues({ ...values, plan: event.target.value })}><option value="">Help me decide</option><option value="curated-search">Curated candidate search — $995</option><option value="full-recruitment">Full recruitment — coming soon</option><option value="payroll">Household payroll — $70 per month</option></select></label>
         <label>Preferred schedule <select value={values.schedule} onChange={(event) => setValues({ ...values, schedule: event.target.value })}><option value="">Not decided yet</option><option value="full-time">Full-time</option><option value="part-time">Part-time</option><option value="live-in">Live-in</option><option value="flexible">Flexible</option></select></label>
         <label>When would you like to start? <input type="text" value={values.startDate} onChange={(event) => setValues({ ...values, startDate: event.target.value })} placeholder="For example: within one month" maxLength={100} /></label>
       </div>
@@ -62,3 +62,4 @@ export function ContactForm() {
     </form>
   );
 }
+
