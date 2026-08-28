@@ -31,8 +31,8 @@ ul { margin: 0; padding: 0; list-style: none; }
 .shell { width: min(1210px, calc(100% - 88px)); margin-inline: auto; }
 .section-space { padding-block: 116px; }
 
-.announcement { min-height: 37px; display: grid; place-items: center; background: var(--forest-dark); color: #eeece4; font-size: var(--text-sm); letter-spacing: .075em; }
-.announcement span { margin-inline: 8px; color: #bea688; }
+.announcement { min-height: 37px; display: flex; align-items: center; justify-content: center; padding-inline: 14px; background: var(--forest-dark); color: #eeece4; font-size: var(--text-sm); letter-spacing: .075em; white-space: nowrap; }
+.announcement__separator { margin-inline: 8px; color: #bea688; }
 .site-header { position: sticky; z-index: 10; top: 0; background: rgb(255 254 250 / .96); border-bottom: 1px solid var(--line); backdrop-filter: blur(10px); }
 .site-header__inner { height: 79px; display: flex; align-items: center; justify-content: space-between; }
 .brand { display: inline-flex; align-items: center; gap: 11px; }
