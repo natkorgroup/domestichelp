@@ -54,7 +54,7 @@ export default function Home() {
       <section className="parents section-space">
         <div className="shell parents__inner">
           <div className="parents__portrait">
-          <img src="/ageing-parents-plants.jpg" alt="An older woman and a trusted household companion caring for plants together at home" />
+          <img src="/ageing-parents-housekeeper.jpg" alt="An experienced housekeeper carefully folding fresh linens in a bright home" />
             <p>Support that feels like a natural part of home.</p>
           </div>
           <div className="parents__copy">
