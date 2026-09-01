@@ -13,13 +13,14 @@
   --line: #e8e5dd;
   --serif: Georgia, "Times New Roman", serif;
   --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --text-2xs: 13px;
-  --text-xs: 14px;
-  --text-sm: 15px;
-  --text-base: 16px;
-  --text-md: 17px;
-  --text-lg: 18px;
-  --text-xl: 19px;
+  /* Readability scale for body copy, labels, lists, and supporting text. */
+  --text-2xs: 15px;
+  --text-xs: 16px;
+  --text-sm: 17px;
+  --text-base: 18px;
+  --text-md: 19px;
+  --text-lg: 20px;
+  --text-xl: 21px;
 }
 
 * { box-sizing: border-box; }
@@ -187,7 +188,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .payroll__price > span { font-family: var(--sans); font-size: var(--text-xs); color: var(--muted); }
 
 .locations-grid { display: grid; grid-template-columns: 1fr 1fr .65fr .7fr; gap: 47px; margin-top: 54px; }
-.region h3 { margin: 0 0 17px; padding-bottom: 12px; border-bottom: 1px solid var(--line); color: var(--forest); font-size: var(--text-base); font-weight: 500; }
+.region h3 { margin: 0 0 17px; padding-bottom: 12px; border-bottom: 1px solid var(--line); color: var(--forest); font-size: 16px; font-weight: 500; }
 .region ul { display: grid; gap: 11px; }
 .region li a { display: flex; align-items: center; justify-content: space-between; color: #5e625b; font-size: var(--text-base); }
 .region li a svg { width: 12px; opacity: 0; transition: opacity .18s; }
